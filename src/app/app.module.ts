@@ -10,6 +10,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { ListPage } from '../pages/list/list';
 import { ComentarioPage } from '../pages/comentario/comentario';
 
+import { EmailComposer } from '@ionic-native/email-composer';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -40,6 +42,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    EmailComposer,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
